@@ -3,7 +3,6 @@ import Usuario
 import os
 import sys
 
-from packages import keyboard
 from packages import tabulate
 
 tabulate = tabulate.tabulate
