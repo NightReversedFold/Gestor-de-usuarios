@@ -4,13 +4,13 @@ tabulate = tabulate.tabulate
 
 class Usuario:
     def __init__(self,nombre,telefono,correo,direccion):
-        self._nombre = nombre 
-        self._telefono = telefono
-        self._correo = correo
-        self._direccion = direccion
+        self.nombre = nombre 
+        self.telefono = telefono
+        self.correo = correo
+        self.direccion = direccion
     
     def Coincide(self,info):
-        return self.nombre == info or self.telefono == info or self.correo == info
+        return self.nombre.lower() == info.lower() or self.telefono == info or self.correo.lower() == info.lower()
     
     def __str__(self):
         lista = [['Nombre','Telefono','Correo','Direccion']]
@@ -33,13 +33,21 @@ class Usuario:
     
     @nombre.setter
     def nombre(self,nuevoNombre):
-        self._nombre = nuevoNombre
+        nuevoNombre = str(nuevoNombre).strip()
+        
+        self._nombre = 'Campo vacio.' if nuevoNombre == '' else nuevoNombre
     @telefono.setter
     def telefono(self,nuevoTelefono):
-        self._telefono = nuevoTelefono
+        nuevoTelefono = str(nuevoTelefono).strip()
+        
+        self._telefono = 'Campo vacio.' if nuevoTelefono == '' else nuevoTelefono
     @correo.setter
     def correo(self,nuevoCorreo):
-        self._correo = nuevoCorreo
+        nuevoCorreo = str(nuevoCorreo).strip()
+        
+        self._correo = 'Campo vacio.' if nuevoCorreo == '' else nuevoCorreo
     @direccion.setter
     def direccion(self,nuevaDireccion):
-        self._direccion = nuevaDireccion
+        nuevaDireccion = str(nuevaDireccion).strip()
+        
+        self._direccion = 'Campo vacio.' if nuevaDireccion == '' else nuevaDireccion

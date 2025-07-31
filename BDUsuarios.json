@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Jack",
+        "telefono": "567456729435",
+        "correo": "wenenin365@0tires.com",
+        "direccion": "Paseo Javier, 31, 7\u00ba C"
+    },
+    {
+        "nombre": "Rick",
+        "telefono": "784515892633",
+        "correo": "wenenin365@0tires.com",
+        "direccion": "710 Haag View Apt. 484"
+    },
+    {
+        "nombre": "Rose",
+        "telefono": "2213415817",
+        "correo": "grallinauruffe-1308@yopmail.com",
+        "direccion": "Campo vacio."
+    },
+    {
+        "nombre": "Fer",
+        "telefono": "2213415817",
+        "correo": "Campo vacio.",
+        "direccion": "Campo vacio."
+    }
+]

@@ -51,7 +51,7 @@ class manejador():
         try:
             opcionSeleccionada = int(input())
         except ValueError:
-            print('La opcion que elejiste no existe.')
+            print('La opcion que elejiste no existe.\n\n')
             input()
             self.PantallaPrincipal()
             return
@@ -59,8 +59,9 @@ class manejador():
         if opcionSeleccionada in self.Opciones:
             self.Opciones[opcionSeleccionada]()
         else:
-            print('Esa opcion no existe.')
-            input()
+            print('Esa opcion no existe.\n\n')
+            input('Presiona enter para vovler a la pantalla principal.')
+
             self.PantallaPrincipal()
             
          
@@ -70,8 +71,9 @@ class manejador():
         try:
            telefono = int(input('Introduce el telefono del usuario\n'))
         except ValueError:
-            print('El valor que introdujiste no es un numero de telefono valido.')
-            input()
+            print('El valor que introdujiste no es un numero de telefono valido.\n\n')
+            input('Presiona enter para vovler a la pantalla principal.')
+
             self.AgregarUsuario()
             return 
          
@@ -89,7 +91,7 @@ class manejador():
         
         print('Usuario registrado exitosamente.\n\n')
         
-        input()
+        input('Presiona enter para vovler a la pantalla principal.')
         
         yn = input('Deseas agregar otro usuario? y/n\n')
         
@@ -105,8 +107,8 @@ class manejador():
             try:
                 opcion = int(input())
             except ValueError:
-                print('La opcion que elejiste no es valida.')
-                input()
+                print('La opcion que elejiste no es valida.\n\n')
+                input('Presiona enter para volver a intentarlo')
                 editar(usuario)
                 return
                 
@@ -124,8 +126,9 @@ class manejador():
                    direccion = input('Introduce el nuevo direccion \n')
                    usuario.direccion = direccion
                case _:
-                   print('No existe esa opcion, vuelve a intentarlo.')
-                   input()
+                   print('No existe esa opcion.\n\n')
+                   input('Presiona enter para volver a intentarlo.')
+                   
                    clean()
                    editar(usuario)
                    return
@@ -155,7 +158,8 @@ class manejador():
             clean()
              
             print(usuario,'\n')
-            input()
+            input('Presiona enter para vovler a la pantalla principal.')
+
             self.PantallaPrincipal() 
                
         self.manejadorDeSeleccionDeUsuarios(self,imprimir)
@@ -196,8 +200,8 @@ class manejador():
                         try:
                             opcion = int(input())
                         except ValueError:
-                            print('Ese valor no es valido.')
-                            input()
+                            print('Ese valor no es valido.\n\n')
+                            input('Presiona enter para volver a intentarlo')
                             seleccion()
                             return 
                             
