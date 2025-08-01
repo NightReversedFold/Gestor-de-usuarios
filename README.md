@@ -1,6 +1,6 @@
 No es una aplicación seria, solo un pequeño proyecto personal para practicar en Python.
 
-Esta aplicación es un gestor de usuarios/contactos; el propósito es simular un administrador de contactos.}
+Esta aplicación es un gestor de usuarios/contactos; el propósito es simular un administrador de contactos.
 
 Puedes agregar, eliminar o editar usuarios (su nombre, teléfono, correo y dirección)
 También están las opciones de imprimir todos los usuarios con sus propiedades, se manejan en forma de tabla para simular una interfaz gráfica.
