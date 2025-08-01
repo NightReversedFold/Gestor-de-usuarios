@@ -22,5 +22,17 @@
         "telefono": "2213415817",
         "correo": "Campo vacio.",
         "direccion": "Campo vacio."
+    },
+    {
+        "nombre": "Tars",
+        "telefono": "432",
+        "correo": "notreal@gmail.com",
+        "direccion": "Campo vacio."
+    },
+    {
+        "nombre": "NightFold",
+        "telefono": "5584736759",
+        "correo": "xfrsaa@gmail.com",
+        "direccion": "Campo vacio."
     }
 ]

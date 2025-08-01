@@ -90,9 +90,7 @@ class manejador():
         self.Gestor.Usuarios = (nombre,telefono,correo,direccion)
         
         print('Usuario registrado exitosamente.\n\n')
-        
-        input('Presiona enter para vovler a la pantalla principal.')
-        
+                
         yn = input('Deseas agregar otro usuario? y/n\n')
         
         self.AgregarUsuario() if yn == 'y' else self.PantallaPrincipal()        
@@ -117,8 +115,17 @@ class manejador():
                    nombre = input('Introduce el nuevo nombre \n')
                    usuario.nombre = nombre
                case 2:
-                   telefono = input('Introduce el nuevo telefono \n')
-                   usuario.telefono = telefono
+                   
+                    try:
+                        telefono = int(input('Introduce el telefono del usuario\n'))
+                        usuario.telefono = telefono
+                    except ValueError:
+                        print('El valor que introdujiste no es un numero de telefono valido.\n\n')
+                        input('Presiona enter para vovler a intentarlo.')
+
+                        editar(usuario)
+                        return 
+                    
                case 3:
                    correo = input('Introduce el nuevo correo \n')
                    usuario.correo = correo
